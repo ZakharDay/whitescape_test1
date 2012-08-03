@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Social ID</title>
+    <%= stylesheet_link_tag "application", "centering_wrapper", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+  	<div class="horizontalWrapper">
+      <div class="verticalWrapper">
+        <section class="content">
+
+        	<%= yield %>
+
+  			</section>
+  		</div>
+  	</div>
+  </body>
+</html>

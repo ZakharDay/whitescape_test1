@@ -1,0 +1,57 @@
+@include font-face('PTSans-Caption-Bold', font-files('PTC75F.ttf', truetype), $weight: 'bold');
+
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 3.6em;
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 2.7em;
+}
+
+html {
+  font-family: 'PTSans-Caption-Bold', Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  @include square;
+  
+  body {
+    font-size: 1em;
+    @include square;
+    
+    .horizontalWrapper {
+      display: table;
+      @include square;
+      min-height: 100%;
+
+      .verticalWrapper {
+        display: table-cell;
+        vertical-align: middle;
+
+        .content {
+          width: 80em;
+    			margin: -8em auto 0 auto;
+    			    			  
+  			  ul {
+  			    margin-bottom: 2em;
+            text-align: center;
+
+            li {
+              display: inline-block;
+              margin: 0 0.2em;
+              
+              img {
+                @include square(3.2em);
+              }
+            }
+    			}
+    		}
+    	}
+    }
+  }
+}
